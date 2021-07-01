@@ -121,19 +121,21 @@
 			</header>
 			<div class="row">
 				<div class="col-12">
-					<form method="post" action="#">
+					<form name="contactForm" id="gForm" enctype="text/plain"
+						action="https://docs.google.com/forms/d/e/1FAIpQLSfOYu16oYdPW6gj-tGN_WDD2JGMotnbxeArdIQpfzfhMkxdCw/formResponse?"
+						target="googleIFrame" onsubmit="submitted=true;">
 						<div class="row">
 							<div class="col-6 col-12-small">
-								<input type="text" name="name" id="name" placeholder="Name" />
+								<input type="text" name="entry.1691451630" id="entry.1691451630" placeholder="Name" />
 							</div>
 							<div class="col-6 col-12-small">
-								<input type="text" name="email" id="email" placeholder="Email" />
+								<input type="text" name="entry.526391085" id="entry.526391085" placeholder="Email" />
 							</div>
 							<div class="col-12">
-								<input type="text" name="subject" id="subject" placeholder="Subject" />
+								<input type="text" name="entry.195104043" id="entry.195104043" placeholder="Subject" />
 							</div>
 							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
+								<textarea name="entry.195939867" id="entry.195939867" placeholder="Message"></textarea>
 							</div>
 							<div class="col-12">
 								<ul class="actions">
@@ -174,6 +176,7 @@
 				</ul>
 			</footer>
 		</div>
+		<iframe name="googleIFrame" id="googleIFrame" style="display:none;" onload="if(submitted){}"></iframe>
 	</article>
 
 	<!-- Scripts -->
@@ -181,9 +184,8 @@
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	<script src="assets/js/formSubmit.js"></script>
 </body>
 
 </html>
